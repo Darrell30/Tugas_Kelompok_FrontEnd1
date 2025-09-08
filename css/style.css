@@ -1,0 +1,127 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #141d1d; /* warna navigasi atas */
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* taruh ke kanan */
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Atur ukuran logo */
+  width: auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.nav-list li {
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list a {
+  color: #ffffff; /* warna teks navigasi atas*/
+  text-decoration: none;
+  padding: 6px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-list a:hover {
+  background-color: #fff;
+  color: #420a0a;
+  border-radius: 4px;
+}
+
+/* Style untuk konten utama */
+main {
+  padding: 20px;
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+  }
+  .nav-list li {
+    margin-left: 10px;
+  }
+  .nav-list a {
+    padding: 6px 8px;
+  }
+}
+
+/* Style untuk bagian sejarah */
+.SejarahMouse {
+  max-width: 800px auto;       /* lebar konten */
+  margin: auto;      /* posisi di tengah */
+  padding: 20px;
+  background: #ededed;       /* background putih */
+  border-radius: 12px;    /* sudut membulat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* efek bayangan */
+  line-height: 1.8;
+}
+
+.SejarahMouse h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;/* ukuran font */
+  font-weight: bold; /* tebal */
+  color: #ee0000; /*warna teks */
+  border-left: 5px solid #ff0000; /*warna border */
+  padding-left: 10px; /* jarak antara teks dan border */
+}
+
+.SejarahMouse p {
+  margin: 10px 0;
+  text-align: justify; /* rata kanan-kiri biar rapi */
+}
+
+.SejarahMouse ul {
+  margin: 15px 0 15px 20px;
+  padding-left: 15px;
+}
+
+.SejarahMouse li {
+  margin-bottom: 8px;
+}
+
+.SejarahMouse img {
+  display: block;
+  margin: 15px auto;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.SejarahMouse iframe {
+  display: block;      /* bikin ke bawah sendiri */
+  max-width: 640px;    /* batasi ukuran */
+  width: 100%;         /* responsif */
+  aspect-ratio: 16 / 9; /* rasio layar */
+  margin: 1rem auto;   /* tengah otomatis */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
