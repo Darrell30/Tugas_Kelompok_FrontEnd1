@@ -2,27 +2,49 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Models</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mouse Models Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts/models.js" defer></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
-    <a href="index.html" class="logo">
-    <img src="img/logo.png" alt="Logo" />
-    </a>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </a>
       <ul class="nav-list">
         <li><a href="index.html">Homepage</a></li>
-        <li><a href="evolution.html">Evolution</a></li>
-        <li><a href="models.html">Models</a></li>
+        <li><a href="models.html" class="active">Models</a></li>
+        <li><a href="cpstest.html">CPS Test</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
-    <h1>Models</h1>
-    <p>Daftar model mouse (seperti ARIA II, HELIOS II PRO S 8K, dsb.) …</p>
+    <div class="catalog-container">
+      <h1>Mouse Models</h1>
+      <p class="subtitle">Find the perfect mouse for your needs.</p>
+
+      <div class="filter-controls">
+        <div class="search-wrapper">
+          <input type="search" id="search-input" placeholder="Search mouse model...">
+        </div>
+        <select id="brand-filter">
+          <option value="all">All Brands</option>
+          </select>
+        <select id="type-filter">
+          <option value="all">All Types</option>
+          </select>
+      </div>
+
+      <div class="mouse-catalog" id="mouse-catalog">
+        </div>
+       <p id="no-results" class="no-results-message" style="display: none;">No models match your criteria.</p>
+    </div>
   </main>
 </body>
 </html>

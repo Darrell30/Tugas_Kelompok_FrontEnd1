@@ -2,180 +2,47 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Homepage</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Evolution of the Mouse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts/index.js" defer></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
-    <a href="index.html" class="logo">
-    <img src="img/logo.png" alt="Logo" />
-    </a>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </a>
       <ul class="nav-list">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="evolution.html">Evolution</a></li>
+        <li><a href="index.html" class="active">Homepage</a></li>
         <li><a href="models.html">Models</a></li>
+        <li><a href="cpstest.html">CPS Test</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
-    <h1>Sejarah Tentang Mouse</h1>
-    <p>By Kelompok 2 Kelas A</p>
+    <div class="timeline-container">
+      <h1>Evolution of the Computer Mouse</h1>
+      
+      <div class="timeline-content">
+        <div class="content-display">
+          <img id="timeline-image" src="" alt="Timeline image" />
+          <div class="text-content">
+            <h2 id="timeline-title"></h2>
+            <p id="timeline-description"></p>
+          </div>
+        </div>
+      </div>
 
-    <section class="SejarahMouse">
-    <h2>Awal Mula: Trackball (1952) </h2>
-    <p>
-      Trackball ditemukan oleh <strong>Ralph Benjamin</strong> pada tahun <strong>1952</strong> Seorang insinyur di
-      <em>Royal Canadian Navy Service</em> di inggris. Alat ini menggunakan bola besar yang dapat digerakkan untuk mengontrol kursor di layar.
-      meskipun pada masa itu belum dimanfaatkan untuk komputer personal, Desain dari Trackball tidak pernah di patenkan, Trackball menjadi tonggal awal dari perkembangan perangkat cursor modern.
-    </p>
-    <img src="img/trackball.png" alt="Trackball tahun 1952">
-
-    <h2>Mouse Pertama (1964)</h2>
-    <p>
-      Pada tahun <strong>1964</strong>, Mouse pertama kali ditemukan oleh <strong>Douglas Engelbart</strong> di <em>Stanford Research Institute</em>. Mouse tersebut punya permukaan bodi
-      berbentuk kotak dengan sudut yang membulat di bagian atas. Kemudian, di bagian atas kanan, terdapat satu tombol berwarna merah yang bisa ditekan. 
-      mouse ini terbuat dari kayu dengan dua roda yang dapat berputar untuk menggerakkan kursor di layar komputer.
-    </p>
-    <img src="img/1964.JPG" alt="Mouse Pertama 1964">
-
-    <h2>Mouse Trackball Pertama (1968)</h2>
-    <p>
-    Pada tahun <strong>1968</strong>, perusahaan <em>Telefunken</em> di Jerman merilis perangkat bernama 
-    <em>Rollkugel</em> (bahasa Jerman untuk "bola bergulir"). Rollkugel ini dianggap sebagai 
-    <strong>mouse trackball pertama</strong>, memiliki bola di bagian bawah sebagai penggerak kursor, 
-    serta satu tombol untuk interaksi. Perangkat ini digunakan terutama untuk menggambar grafik vektor 
-    pada sistem komputer Telefunken TR 440.
-    </p>
-    <img src="img/rollkugel.JPG" alt="Mouse Trackball Pertama 1968">
-
-    <h2>Mouse Optik Pertama (1980)</h2>
-    <p>
-    Pada tahun <strong>1980</strong>, dua penemu independen menciptakan mouse optik pertama, yaitu 
-    <strong>Steve Kirsch</strong> dan <strong>Richard F. Lyon</strong>. 
-      Mouse optik ini berbeda dari mouse bola karena menggunakan sensor cahaya untuk mendeteksi gerakan di permukaan datar.
-    </p>
-    <p>
-    <li><strong>Steve Kirsch</strong> mengembangkan mouse optik di 
-    <em>Mouse Systems Corporation</em> 
-    Ia kemudian mendirikan perusahaan <em>Mouse Systems</em> untuk mengkomersialkan penemuannya.</li>
-    <img src="img/Steve1980.jpg" alt="Mouse Optik Pertama Steve 1980">
-    <li><strong>Richard F. Lyon</strong> mengembangkan mouse optik di 
-    <em>Xerox PARC</em> (Palo Alto Research Center) dan mempatenkan penemuannya pada tahun <strong>1980</strong>.
-    Gambar dibawah Chip mouse optik Xerox awal, sebelum pengembangan desain kemasan terbalik oleh Williams dan Cherry</li>
-    <img src="img/Richard1981.jpg" alt="Mouse Optik Pertama Richard 1981">
-    </p>
-
-
-    <h2>Mouse Komersial Pertama (1981)</h2>
-    <p>
-    Pada Tahun <strong>1981</strong>, perusahaan <em>Xerox</em> meluncurkan komputer <em>Xerox Star</em> 
-    yang menjadi debut komersial pertama mouse komputer. 
-    Meski awalnya belum populer karena harga yang mahal, mouse kemudian semakin dikenal 
-    setelah dipakai pada <em>Apple Lisa</em> (1983) dan <em>Macintosh</em> (1984).
-    <img src="img/1981.jpg" alt="Mouse Komersial Pertama 1981">
-    </p>
-
-    <h2>Mouse Konsumen Pertama (1983)</h2>
-    <p>
-    Mouse pada <em>Apple Lisa</em> <strong>1983</strong> menjadi salah satu terobosan penting dalam sejarah komputer pribadi. 
-    <em>Apple Lisa</em> adalah komputer pertama yang dijual massal dengan antarmuka grafis berbasis ikon, menu, 
-    dan jendela, sehingga membutuhkan perangkat input yang mudah digunakan. Untuk itu, Apple menghadirkan 
-    sebuah mouse sederhana berbentuk kotak dengan satu tombol. Desain ini terinspirasi dari penelitian <em>Xerox PARC,</em> 
-    tetapi Apple berhasil membuatnya lebih murah, tahan lama, dan praktis untuk diproduksi. Dengan mouse ini, pengguna 
-    dapat menggerakkan kursor di layar, memilih ikon, membuka menu, serta melakukan drag-and-drop. Kehadiran mouse pada 
-    Apple Lisa memperkenalkan cara baru berinteraksi dengan komputer, menggantikan perintah teks yang rumit, dan menjadi 
-    fondasi penggunaan mouse di komputer modern.
-    <img src="img/1983.jpg" alt="Mouse Konsumen Pertama 1983">
-    </p>
-
-    <h2>Mouse Nirkabel Pertama (1984-1991)</h2>
-    <p>
-    Pada Tahun <strong>1984</strong>, perusahaan <em>Logitech</em> memperkenalkan
-    mouse nirkabel pertama yang menggunakan teknologi <em>infrared</em> untuk
-    menghubungkan perangkat dengan komputer. Meski desainnya masih sederhana
-    dan bergantung pada baterai dengan daya tahan terbatas, Namun, Cordless MouseMan Keluaran <strong>1991</strong> adalah mouse pertama
-    yang berkomunikasi dengan sinyal radio, Hal ini memungkinkan Mouse Tersebut bekerja diluar jangkauan penerimanya, inovasi ini menjadi
-    langkah awal menuju perkembangan mouse tanpa kabel modern.
-    <img src="img/1991.jpg" alt="Cordless MouseMan 1984">
-    </p>
-
-    <h2>Mouse Ergonomis Pertama (1994)</h2>
-    <p>
-    Pada Tahun <strong>1994</strong>, <em>Jack Lo</em> menciptakan dan mematenkan 
-    sebuah <strong>mouse ergonomis revolusioner</strong> karena ketidaknyamanan yang 
-    ia rasakan saat menggunakan mouse konvensional. Penemuannya ini merupakan mouse 
-    pertama yang menopang tangan dalam posisi <em>jabat tangan tegak penuh</em>, 
-    sehingga menghilangkan gerakan memutar lengan yang biasa dilakukan pada mouse biasa. 
-    Produk ini kemudian dipasarkan sebagai <strong>Evoluent Vertical Mouse</strong>, 
-    yang menjadi pionir dalam kategori <em>vertical ergonomic mouse</em> modern.
-    <img src="img/1994.jpg" alt="Mouse Ergonomis Pertama 1994">
-    </p>
-
-
-    <h2>Mouse Gaming Pertama (1999)</h2>
-    <p>
-    Pada Tahun <strong>1999</strong>, perusahaan <em>Razer</em> merilis 
-    <strong>Boomslang</strong>, yang dikenal sebagai mouse gaming pertama di dunia. 
-    Tidak seperti mouse lain pada zamannya, Boomslang dirancang dari awal khusus 
-    untuk kebutuhan <em>gaming</em>. Inovasi pentingnya adalah sensitivitas tinggi, 
-    menjadi mouse pertama yang menawarkan lebih dari <strong>1.000 DPI</strong>. 
-    Dengan desain ergonomis unik dan presisi luar biasa, Boomslang membuka jalan 
-    bagi lahirnya industri periferal gaming modern.
-    <img src="img/1999.png" alt="Razer Boomslang Mouse Gaming Pertama 1999">
-    </p>
-
-
-    <h2>Mouse Laser Pertama (2004)</h2>
-    <p>
-    Pada Tahun <strong>2004</strong>, perusahaan <em>Logitech</em> meluncurkan 
-    <em>MX1000 Laser Cordless Mouse</em>, yang menjadi mouse pertama di dunia 
-    menggunakan teknologi <strong>laser tracking</strong>. Teknologi ini 
-    dikembangkan bersama <em>Agilent Technologies</em> dan menawarkan presisi 
-    jauh lebih tinggi dibandingkan mouse optik biasa, serta dapat digunakan 
-    di hampir semua permukaan. Inovasi ini membuka jalan bagi mouse modern 
-    berperforma tinggi, terutama untuk kebutuhan produktivitas dan gaming. 
-    <img src="img/2004.jpg" alt="Mouse Laser Pertama 2004">
-    </p>
-
-    <h2>Mouse Giroskopik Pertama (2007)</h2>
-    <p>
-    Pada Tahun <strong>2007</strong>, Logitech memperkenalkan 
-    <em>MX Air Mouse</em>, mouse giroskopik pertama yang dapat 
-    digunakan di udara tanpa alas datar. Dengan teknologi giroskop 
-    dan sensor gerakan, perangkat ini memungkinkan pengguna menggerakkan 
-    kursor hanya dengan mengayunkan mouse di udara, mirip remote kontrol. 
-    Inovasi ini menghadirkan cara baru berinteraksi dengan komputer, 
-    terutama untuk presentasi dan hiburan multimedia. 
-    <img src="img/2007.jpg" alt="Mouse Giroskopik Pertama 2007">
-    </p>
-
-    <h2>Mouse 3D Pertama (2010)</h2>
-    <p>
-    Pada Tahun <strong>2010</strong>, perusahaan <em>Axsotic</em> memperkenalkan 
-    <strong>Axsotic 3D Spherical Mouse</strong>, sebuah perangkat input unik yang 
-    menggunakan bola transparan untuk mengendalikan objek dalam ruang tiga dimensi. 
-    Dengan teknologi enam derajat kebebasan (6DoF), pengguna dapat memutar, menggeser, 
-    dan memperbesar objek 3D secara lebih intuitif, menjadikannya alat inovatif untuk 
-    <em>CAD</em>, desain 3D, dan animasi digital. 
-    <iframe src="https://player.vimeo.com/video/16253164" alt="Video Mouse 3d Pertama 2010"></iframe>
-    </p>
-
-    <h2>Mouse Multi-Surface Pertama (2014)</h2>
-    <p>
-    Pada Tahun <strong>2014</strong>, <em>Logitech</em> merilis 
-    <strong>MX Master</strong>, mouse pertama dengan teknologi 
-    <em>Darkfield Laser Tracking</em> generasi baru. Teknologi ini 
-    memungkinkan mouse digunakan di hampir semua permukaan, termasuk kaca, 
-    tanpa memerlukan mousepad khusus. Selain itu, MX Master hadir dengan desain 
-    ergonomis, roda gulir adaptif, dan konektivitas ganda, menjadikannya standar baru 
-    untuk mouse produktivitas premium. 
-    <img src="img/2014.png" alt="Logitech MX Master 2014">
-    </p>
-
-
+      <div class="timeline-slider">
+        <div class="timeline-bar" id="timeline-bar">
+          </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
