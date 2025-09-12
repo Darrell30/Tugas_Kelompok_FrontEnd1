@@ -21,15 +21,51 @@
   </header>
 
   <main class="cps-main">
-    <h1>Clicks Per Second Test</h1>
+    <h1>CPS TEST</h1>
+    <p class="subtitle">See How Fast You Are</p>
     <div class="cps-container">
-      <div id="timer-display">Time: <strong>5s</strong></div>
+
+      <!-- Pilihan durasi -->
+      <div class="duration-select">
+        <label for="duration">Select Duration:</label>
+        <select id="duration">
+          <option value="1">1s</option>
+          <option value="5" selected>5s</option>
+          <option value="10">10s</option>
+          <option value="30">30s</option>
+          <option value="60">60s</option>
+        </select>
+      </div>
+          
+      <div class="stats-bar">
+        <div class="stat" id="timer-box">
+          <div class="value" id="timer-value">0</div>
+          <div class="label">Timer (s)</div>
+        </div>
+        <div class="stat" id="clicks-box">
+          <div class="value" id="clicks-value">0</div>
+          <div class="label">Click/s</div>
+        </div>
+        <div class="stat" id="score-box">
+          <div class="value" id="score-value">0</div>
+          <div class="label">Score</div>
+        </div>
+      </div>
+
       <div id="click-area">Click here to start!</div>
-      <button id="start-btn">Start Test</button>
       <div id="result-display"></div>
     </div>
   </main>
 
-  <script src="script.js"></script>
+  <!-- Popup Modal -->
+  <div id="score-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Test Result</h2>
+      <p id="score-text"></p>
+    </div>
+  </div>
+
+  <script src="scripts/cpstest.js"></script>
 </body>
 </html>
