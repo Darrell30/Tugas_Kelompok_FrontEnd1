@@ -244,7 +244,7 @@ main {
   .text-content {
     text-align: center;
   }
-  
+
   .text-content p {
     text-align: left;
   }
@@ -441,7 +441,6 @@ main {
   color: #555;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.1s ease;
-  margin-bottom: 1.5rem;
   user-select: none;
 }
 
@@ -528,7 +527,7 @@ main {
 #score-box { background: linear-gradient(90deg, #0043fc, #3b82f6); }
 
 .value {
-  font-size: 1.5rem;        /* angka lebih kecil */
+  font-size: 1.5rem;      /* angka lebih kecil */
   font-weight: bold;
 }
 
@@ -553,7 +552,7 @@ main {
 }
 
 .modal-content {
-  position: relative;
+  position: relative; /* ADDED: This is crucial for positioning the close button */
   background: #fff;
   border-radius: 12px;
   padding: 2rem;
@@ -575,18 +574,19 @@ main {
   color: #333;
 }
 
-.close {
+/* CHANGED: Switched from .close class to #close-modal ID to match JS */
+#close-modal {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 15px;
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #aaa;
   cursor: pointer;
   transition: color 0.3s;
 }
 
-.close:hover {
+#close-modal:hover {
   color: #007bff;
 }
 
